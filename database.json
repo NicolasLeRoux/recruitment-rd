@@ -1,0 +1,46 @@
+{
+    "shift": [
+        {
+            "id": 0,
+            "name": "2x8 A"
+        },
+        {
+            "id": 1,
+            "name": "2x8 B"
+        },
+        {
+            "id": 2,
+            "name": "2x8 C"
+        }
+    ],
+    "type": [
+        {
+            "id": 0,
+            "name": "MOD"
+        },
+        {
+            "id": 1,
+            "name": "MOS"
+        }
+    ],
+    "workforce": [
+        {
+            "id": 0,
+            "name": "Paul BISMUTH",
+            "shift": 2,
+            "type": 0
+        },
+        {
+            "id": 1,
+            "name": "Roger RABBIT",
+            "shift": 1,
+            "type": 0
+        },
+        {
+            "id": 2,
+            "name": "John DOE",
+            "shift": 0,
+            "type": 1
+        }
+    ]
+}
