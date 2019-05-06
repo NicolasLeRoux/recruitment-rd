@@ -7,7 +7,6 @@ import { AppComponent } from './app.component';
 import { ShiftService } from './shift.service';
 import { TypeService } from './type.service';
 import { WorkforceService } from './workforce.service';
-import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
     declarations: [
@@ -15,8 +14,7 @@ import { HttpClientModule } from '@angular/common/http';
     ],
     imports: [
         BrowserModule,
-        CommonModule,
-        HttpClientModule
+        CommonModule
     ],
     providers: [
         ShiftService,
