@@ -39,19 +39,16 @@ export class AppComponent implements OnInit {
         const type$: Observable<IType[]> = this.typeSrv.query();
         const workForce$: Observable<IWorkforce[]> = this.workforceSrv.query();
 
-        this.data$ = combineLatest(workForce$, shift$, type$)
+        this.data$ = workForce$
             .pipe(
-                map(([workforces, shifts, types]: [IWorkforce[], IShift[], IType[]]) => {
+                map((workforces: IWorkforce[]) => {
                     return workforces.map(workforce => {
                         return {
                             id: workforce.id,
-                            name: workforce.name,
-                            shift: shifts.find((shift) => shift.id === workforce.shift).name,
-                            type: types.find((type) => type.id === workforce.type).name,
+                            name: workforce.name
                         } as IData;
                     });
-                }),
-                share()
+                })
             );
     }
 }
